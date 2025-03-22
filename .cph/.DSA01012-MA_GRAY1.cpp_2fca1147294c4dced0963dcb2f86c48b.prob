@@ -1,0 +1,1 @@
+{"name":"Local: DSA01012-MA_GRAY1","url":"e:\\DSA\\DSA01012-MA_GRAY1.cpp","tests":[{"id":1739784263369,"input":"2\n3\n4","output":"000 001 011 010 110 111 101 100\n0000 0001 0011 0010 0110 0111 0101 0100 1100 1101 1111 1110 1010 1011 1001 1000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA01012-MA_GRAY1.cpp","group":"local","local":true}

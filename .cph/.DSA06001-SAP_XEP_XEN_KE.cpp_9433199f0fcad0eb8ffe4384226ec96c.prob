@@ -1,0 +1,1 @@
+{"name":"Local: DSA06001-SAP_XEP_XEN_KE","url":"e:\\DSA\\DSA06001-SAP_XEP_XEN_KE.cpp","tests":[{"id":1741880704808,"input":"2\n7\n7 1 2 3 4 5 6\n8\n1 6 9 4 3 7 8 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA06001-SAP_XEP_XEN_KE.cpp","group":"local","local":true}

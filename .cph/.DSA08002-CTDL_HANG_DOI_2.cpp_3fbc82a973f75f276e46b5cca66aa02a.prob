@@ -1,0 +1,1 @@
+{"name":"Local: DSA08002-CTDL_HANG_DOI_2","url":"e:\\DSA\\DSA08002-CTDL_HANG_DOI_2.cpp","tests":[{"id":1742270078223,"input":"9\nPUSH 1\nPUSH 2\nPOP\nPRINTFRONT\nPUSH 3\nPRINTFRONT\nPOP\nPOP\nPRINTFRONT","output":"2\n2\nNONE"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA08002-CTDL_HANG_DOI_2.cpp","group":"local","local":true}

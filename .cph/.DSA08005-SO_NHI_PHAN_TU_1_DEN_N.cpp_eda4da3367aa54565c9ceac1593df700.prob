@@ -1,0 +1,1 @@
+{"name":"Local: DSA08005-SO_NHI_PHAN_TU_1_DEN_N","url":"e:\\DSA\\DSA08005-SO_NHI_PHAN_TU_1_DEN_N.cpp","tests":[{"id":1742272304173,"input":"2\n2\n5","output":"1 10\n1 10 11 100 101"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA08005-SO_NHI_PHAN_TU_1_DEN_N.cpp","group":"local","local":true}

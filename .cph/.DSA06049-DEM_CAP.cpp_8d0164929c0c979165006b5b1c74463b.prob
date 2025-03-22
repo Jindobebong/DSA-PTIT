@@ -1,0 +1,1 @@
+{"name":"Local: DSA06049-DEM_CAP","url":"e:\\DSA\\DSA06049-DEM_CAP.cpp","tests":[{"id":1741885036326,"input":"2\n4 3\n1 10 4 2\n3 5\n2 3 4","output":"2\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA06049-DEM_CAP.cpp","group":"local","local":true}

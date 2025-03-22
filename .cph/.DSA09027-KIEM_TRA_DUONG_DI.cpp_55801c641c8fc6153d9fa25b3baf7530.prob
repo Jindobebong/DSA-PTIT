@@ -1,0 +1,1 @@
+{"name":"Local: DSA09027-KIEM_TRA_DUONG_DI","url":"e:\\DSA\\DSA09027-KIEM_TRA_DUONG_DI.cpp","tests":[{"id":1740813455215,"input":"1\n6 5\n1 2\n2 3\n3 4\n1 4\n5 6\n2\n1 5\n2 4","output":"NO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA09027-KIEM_TRA_DUONG_DI.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: DSA06040-GIAO_CUA_3_DAY_SO","url":"e:\\DSA\\DSA06040-GIAO_CUA_3_DAY_SO.cpp","tests":[{"id":1742026536696,"input":"1\n6 5 8\n1 5 10 20 40 80\n6 7 20 80 100\n3 4 15 20 30 70 80 120","output":"20 80"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA06040-GIAO_CUA_3_DAY_SO.cpp","group":"local","local":true}

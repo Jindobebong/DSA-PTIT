@@ -1,0 +1,1 @@
+{"name":"Local: DSA07002-NGAN_XEP2","url":"e:\\DSA\\DSA07002-NGAN_XEP2.cpp","tests":[{"id":1740481134179,"input":"9\nPUSH 1\nPUSH 2\nPOP\nPRINT\nPUSH 3\nPRINT\nPOP\nPOP\nPRINT","output":"1\n3\nNONE"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA07002-NGAN_XEP2.cpp","group":"local","local":true}

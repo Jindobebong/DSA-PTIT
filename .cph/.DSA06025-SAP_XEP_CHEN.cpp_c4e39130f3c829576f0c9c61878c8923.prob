@@ -1,0 +1,1 @@
+{"name":"Local: DSA06025-SAP_XEP_CHEN","url":"e:\\DSA\\DSA06025-SAP_XEP_CHEN.cpp","tests":[{"id":1742208906043,"input":"4\n5 7 3 2","output":"Buoc 0: 5\nBuoc 1: 5 7\nBuoc 2: 3 5 7\nBuoc 3: 2 3 5 7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA06025-SAP_XEP_CHEN.cpp","group":"local","local":true}
