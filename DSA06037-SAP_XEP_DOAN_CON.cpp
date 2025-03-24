@@ -2,43 +2,41 @@
 #define ll long long
 using namespace std;
 
-int t, n;
 int main()
 {
-    cin >> t; 
-    while(t--){
-        cin >> n; 
-        int a[n], prefix_max[n], prefix_min[n];
-        for(int i = 0; i < n; ++i) cin >> a[i];
-        prefix_max[0] = a[0];
-        for(int i = 1; i <= n; ++i){
-            prefix_max[i] = max(prefix_max[i - 1], a[i]);
-        }
-        prefix_min[n - 1] = a[n - 1];
-        for(int i = n - 2; i >= 0; --i)
-            prefix_min[i] = min(prefix_min[i + 1], a[i]);
-        vector<int>kq; 
-        for(int i = 1; i < n; ++i)
-            if(prefix_max[i - 1] <= prefix_min[i])
-                kq.push_back(i);
-        if(kq.size() == 0)
-            cout << 0 << "\n";
-        else{
-            cout << kq.size() << "\n";
-            for(auto x : kq)
-                cout << x << " ";
+    int t, n; cin >> t; while(t--){
+        cin >> n; int a[n];
+        for(int i = 1; i <= n; ++i) cin >> a[i];
+        int right[n], left[n]; //right[i] : phần từ lớn nhất kết thúc tại i(0 --> i), left[i] : phần tử nhỏ nhất trong đoạn i + 1 --> n
+        // nếu như right[i - 1] : thằng lớn nhất trong đoạn từ 1 --> i - 1 <= thằng nhỏ nhất trong đoạn từ i --> cuối dãy --> có thể sắp xếp
+        right[1] = a[1];
+        for(int i = 2; i <= n; ++i)
+            right[i] = max(right[i - 1], a[i]);
+        
+        left[n] = a[n];
+
+        for(int i = n - 1; i >= 1; --i)
+            left[i] = min(left[i + 1], a[i]);
+
+        vector<int>k; 
+        
+        for(int i = 2; i <= n; ++i)
+            if(right[i - 1] <= left[i]) k.push_back(i);
+        
+        cout << k.size() << "\n";
+
+        if(k.size() != 0){
+            for(auto x : k)
+                cout << x - 1 << " ";
+            // cout << "\n";
         }
         cout << "\n";
     }
     return 0;
 }
 
-1 1 3 4 4
 /*
 2 1 3 5 4
 
-giá trị lớn nhất của đoạn đầu (1 --> m) <= giá trị nhỏ nhất của đoạn cuối (m + 1 --> n)
-
---> prefixmax[i]: giá trị lớn nhất từ vị trí 0 --> i
---> prefixmin[i]: giá trị nhỏ nhất từ vị trí i --> n - 1
+4 4 3 1 1
 */
