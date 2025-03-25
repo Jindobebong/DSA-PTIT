@@ -1,26 +1,35 @@
 #include <bits/stdc++.h>
-#define int long long
+#define ll long long
 using namespace std;
 
-int t, n, k, a[5005];
-int kt(int a[], int n, int k){
-    for(int i = 0; i < n; ++i){
-        for(int j = i + 1; j < n; ++j)
-            if(binary_search(a + j + 1, a + n, k - a[i] - a[j]))
-                return true;
-    }
-    return false;
-}
-main()
+int main()
 {
-    cin >> t;
+    int t, n, k; cin >> t; 
     while(t--){
-        cin >> n >> k; 
-        for(int i = 0; i < n; ++i)
-            cin >> a[i];
+        cin >> n >> k; int a[n];
+        for(int i = 0; i < n; ++i) cin >> a[i];
+
         sort(a, a + n);
-        if(kt(a, n, k)) cout << "YES\n"; 
-        else cout << "NO\n";
+
+        bool ok = 1;
+
+        for(int i = 0; i < n; ++i){
+            bool kt = 0;
+            for(int j = i + 1; j < n; ++j){
+                auto it = binary_search(a + j + 1, a + n, k - a[i] - a[j]);
+                if(it){
+                    cout << "YES";
+                    kt = 1;
+                    ok = 0; 
+                    break;
+                }
+            }
+            if(kt) break;
+        }
+
+        if(ok) cout << "NO";
+
+        cout << "\n";
     }
     return 0;
 }
