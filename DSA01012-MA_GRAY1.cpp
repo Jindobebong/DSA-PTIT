@@ -1,28 +1,34 @@
 #include <bits/stdc++.h>
 #define ll long long
+#define maxn 1000005
+#define endl "\n"
 using namespace std;
 
-int gray(int n){
-    return n ^ (n >> 1);
-}
 int t, n; 
+
+vector<string> gray(int n){
+    if(n == 0) return {""};
+    vector<string>prev = gray(n - 1); 
+    vector<string>result; 
+
+    //gắn "0" vào trước
+    for(string s : prev)
+        result.push_back('0' + s); 
+    //gắn "1" vào trước nhưng theo thứ tự ngược
+    for(int i = prev.size() - 1; i >= 0; --i)
+        result.push_back('1' + prev[i]);
+    return result;
+}
 int main()
 {
-    cin >> t;
+    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+    cin >> t; 
     while(t--){
         cin >> n; 
-        int x = 1 << n; 
-        for(int i = 0; i < x; ++i)
-        {
-            string s = bitset<32>(gray(i)).to_string(); 
-            cout << s.substr(32 - n) << " ";
-        }
-        cout << "\n";
+        vector<string>print = gray(n); 
+        for(auto s : print)
+            cout << s << " ";
+        cout << endl; 
     }
     return 0;
 }
-
-/*
-n = 5
-5 ^ (n >> 1) = 5 ^ 2 = 101 + 010 = 111
-*/

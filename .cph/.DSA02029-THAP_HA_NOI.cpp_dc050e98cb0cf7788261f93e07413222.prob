@@ -1,0 +1,1 @@
+{"name":"Local: DSA02029-THAP_HA_NOI","url":"e:\\DSA\\DSA02029-THAP_HA_NOI.cpp","tests":[{"id":1745650959493,"input":"3","output":"A -> C\nA -> B\nC -> B\nA -> C\nB -> A\nB -> C\nA -> C"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA02029-THAP_HA_NOI.cpp","group":"local","local":true}

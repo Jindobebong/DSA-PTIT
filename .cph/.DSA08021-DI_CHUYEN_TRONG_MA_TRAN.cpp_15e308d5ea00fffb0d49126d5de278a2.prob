@@ -1,0 +1,1 @@
+{"name":"Local: DSA08021-DI_CHUYEN_TRONG_MA_TRAN","url":"e:\\DSA\\DSA08021-DI_CHUYEN_TRONG_MA_TRAN.cpp","tests":[{"id":1745599673008,"input":"1\n3  3\n2  1  2\n1  1  1\n1  1  1","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA08021-DI_CHUYEN_TRONG_MA_TRAN.cpp","group":"local","local":true}

@@ -1,31 +1,28 @@
 #include <bits/stdc++.h>
 #define ll long long
+#define maxn 100005
+#define endl "\n"
 using namespace std;
 
-int n, q, l, r, a[100005];
-ll dp[100005]; //tong day con lon nhat den vi tri l 
+int n, q, a[maxn], l, r;
 int main()
 {
+    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
     cin >> n >> q; 
-    for(int i = 1; i <= n; ++i)
+    ll b[n + 5], tmp = 0;
+    b[0] = 0;
+    for(int i = 1; i <= n; ++i) {
         cin >> a[i]; 
-    dp[1] = a[1]; 
-    for(int i = 2; i <= n; ++i)
-        //ghep ai vao day = dp[i - 1] + a[i]
-        //chi lay moi ai = ai
-        dp[i] = max(a[i], dp[i - 1] + a[i]);
-        while(q--){
-        cin >> l >> r; 
-        cout << 
+        if(a[i] > 0){
+            tmp += a[i];
+        }
+        b[i] = tmp;
+    }
+    while(q--){
+        cin >> l >> r;
+        if(b[r] - b[l - 1] > 0) cout << b[r] - b[l - 1];
+        else cout << 0; 
+        cout << endl; 
     }
     return 0;
 }
-
-/*
-5 2
--1 2 -3 4 -5
-2 4  -> 6
-3 3  -> 0
-
-[2,4] : 2 -3 4
-*/

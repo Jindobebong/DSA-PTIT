@@ -1,0 +1,1 @@
+{"name":"Local: DSA_P296-DAY_CON_TONG_LON_NHAT","url":"e:\\DSA\\DSA_P296-DAY_CON_TONG_LON_NHAT.cpp","tests":[{"id":1745521186344,"input":"5 2\n-1 2 -3 4 -5\n2 4\n3 3\n","output":"6\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA_P296-DAY_CON_TONG_LON_NHAT.cpp","group":"local","local":true}

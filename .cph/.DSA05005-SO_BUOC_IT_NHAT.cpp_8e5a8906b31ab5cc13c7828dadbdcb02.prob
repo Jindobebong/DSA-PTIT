@@ -1,0 +1,1 @@
+{"name":"Local: DSA05005-SO_BUOC_IT_NHAT","url":"e:\\DSA\\DSA05005-SO_BUOC_IT_NHAT.cpp","tests":[{"id":1745516320220,"input":"1\n7\n2 3 5 1 4 7 6","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA05005-SO_BUOC_IT_NHAT.cpp","group":"local","local":true}

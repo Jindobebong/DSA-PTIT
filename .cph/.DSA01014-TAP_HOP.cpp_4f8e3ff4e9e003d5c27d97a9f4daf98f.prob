@@ -1,0 +1,1 @@
+{"name":"Local: DSA01014-TAP_HOP","url":"e:\\DSA\\DSA01014-TAP_HOP.cpp","tests":[{"id":1743603867632,"input":"9 3 23\n9 3 22\n10 3 28\n16 10 107\n20 8 102\n20 10 105\n20 10 155\n3 4 3\n4 2 11\n0 0 0","output":"1\n2\n0\n20\n1542\n5448\n1\n0\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA01014-TAP_HOP.cpp","group":"local","local":true}

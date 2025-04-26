@@ -1,0 +1,1 @@
+{"name":"Local: DSA05034-TONG_SO_CACH_DI_CHUYEN","url":"e:\\DSA\\DSA05034-TONG_SO_CACH_DI_CHUYEN.cpp","tests":[{"id":1745569336374,"input":"2\n2 2\n4 2","output":"2\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA05034-TONG_SO_CACH_DI_CHUYEN.cpp","group":"local","local":true}

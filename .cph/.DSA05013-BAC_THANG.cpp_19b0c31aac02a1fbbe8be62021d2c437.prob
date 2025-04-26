@@ -1,0 +1,1 @@
+{"name":"Local: DSA05013-BAC_THANG","url":"e:\\DSA\\DSA05013-BAC_THANG.cpp","tests":[{"id":1745517074541,"input":"2\n2 2\n4 2\n","output":"2 \n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA05013-BAC_THANG.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: DSA04005-DAY_XAU_FIBONACI","url":"e:\\DSA\\DSA04005-DAY_XAU_FIBONACI.cpp","tests":[{"id":1745567021078,"input":"2\n6 4\n8 19","output":"A\nB"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA04005-DAY_XAU_FIBONACI.cpp","group":"local","local":true}

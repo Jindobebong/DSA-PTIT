@@ -1,0 +1,1 @@
+{"name":"Local: DSA02012-DI_CHUYEN_TRONG_MA_TRAN","url":"e:\\DSA\\DSA02012-DI_CHUYEN_TRONG_MA_TRAN.cpp","tests":[{"id":1745565514708,"input":"2\n2  3\n1  2  3 \n4  5  6\n2  2\n1  2 \n3  4","output":"3\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA02012-DI_CHUYEN_TRONG_MA_TRAN.cpp","group":"local","local":true}

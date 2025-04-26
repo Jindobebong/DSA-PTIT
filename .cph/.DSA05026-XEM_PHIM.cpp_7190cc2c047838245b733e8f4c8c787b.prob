@@ -1,0 +1,1 @@
+{"name":"Local: DSA05026-XEM_PHIM","url":"e:\\DSA\\DSA05026-XEM_PHIM.cpp","tests":[{"id":1745522703128,"input":"259 5\n81\n58\n42\n33\n61","output":"242"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA05026-XEM_PHIM.cpp","group":"local","local":true}

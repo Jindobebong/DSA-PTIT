@@ -1,0 +1,1 @@
+{"name":"Local: DSA05001-XAU_CON_DUNG_DAI_NHAT","url":"e:\\DSA\\DSA05001-XAU_CON_DUNG_DAI_NHAT.cpp","tests":[{"id":1745514804637,"input":"2\nAGGTAB\nGXTXAYB\nAA\nBB","output":"4\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA05001-XAU_CON_DUNG_DAI_NHAT.cpp","group":"local","local":true}

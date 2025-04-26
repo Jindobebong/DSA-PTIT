@@ -1,0 +1,1 @@
+{"name":"Local: CTDL_006-LOC_DU_LIEU_TRUNG_TRONG_DSLK_DON","url":"e:\\DSA\\CTDL_006-LOC_DU_LIEU_TRUNG_TRONG_DSLK_DON.cpp","tests":[{"id":1745568271431,"input":"12\n1 1 1 4  5 1 4  7 7 8 1 9","output":"1 4 5 7 8 9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\CTDL_006-LOC_DU_LIEU_TRUNG_TRONG_DSLK_DON.cpp","group":"local","local":true}
