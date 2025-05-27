@@ -1,0 +1,1 @@
+{"name":"Local: DSA05020-DUONG_DI_NHO_NHAT","url":"e:\\DSA\\DSA05020-DUONG_DI_NHO_NHAT.cpp","tests":[{"id":1746108008440,"input":"1\n3 3\n1 2 3\n4 8 2\n1 5 3","output":"8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA05020-DUONG_DI_NHO_NHAT.cpp","group":"local","local":true}

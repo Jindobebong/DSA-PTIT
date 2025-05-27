@@ -1,0 +1,1 @@
+{"name":"Local: DSA05038-DAY_CON_TANG_DAI_NHAT_2_CHIEU","url":"e:\\DSA\\DSA05038-DAY_CON_TANG_DAI_NHAT_2_CHIEU.cpp","tests":[{"id":1745863300790,"input":"8\n1 3\n3 2\n1 1\n4 5\n6 3\n9 9\n8 7\n7 6","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA05038-DAY_CON_TANG_DAI_NHAT_2_CHIEU.cpp","group":"local","local":true}

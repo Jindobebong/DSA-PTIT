@@ -1,0 +1,1 @@
+{"name":"Local: DSAKT110-NHA_KHONG_KE_NHAU","url":"e:\\DSA\\DSAKT110-NHA_KHONG_KE_NHAU.cpp","tests":[{"id":1745866354501,"input":"2\n6\n5 5 10 100 10 5\n4\n3 2 7 10","output":"110\n13"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSAKT110-NHA_KHONG_KE_NHAU.cpp","group":"local","local":true}

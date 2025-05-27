@@ -1,0 +1,1 @@
+{"name":"Local: DSA02009-CHIA_MANG","url":"e:\\DSA\\DSA02009-CHIA_MANG.cpp","tests":[{"id":1746152645387,"input":"2\n5 3\n2 1 4 5 6\n5 3\n2 1 5 5 6","output":"1\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA02009-CHIA_MANG.cpp","group":"local","local":true}

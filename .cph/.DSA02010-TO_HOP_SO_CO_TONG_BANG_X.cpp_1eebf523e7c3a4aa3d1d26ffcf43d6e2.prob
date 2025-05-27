@@ -1,0 +1,1 @@
+{"name":"Local: DSA02010-TO_HOP_SO_CO_TONG_BANG_X","url":"e:\\DSA\\DSA02010-TO_HOP_SO_CO_TONG_BANG_X.cpp","tests":[{"id":1745718389012,"input":"1\n4  8\n2  4  6  8","output":"[2 2 2 2] [2 2 4] [2 6] [4 4] [8]"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA02010-TO_HOP_SO_CO_TONG_BANG_X.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: DSA04030-SO_TRIBONACI","url":"e:\\DSA\\DSA04030-SO_TRIBONACI.cpp","tests":[{"id":1746364975505,"input":"5\n1\n2\n3\n4\n5","output":"1\n3\n6\n12\n23"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA04030-SO_TRIBONACI.cpp","group":"local","local":true}

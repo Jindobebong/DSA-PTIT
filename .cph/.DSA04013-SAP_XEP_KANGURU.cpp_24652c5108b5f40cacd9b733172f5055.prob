@@ -1,0 +1,1 @@
+{"name":"Local: DSA04013-SAP_XEP_KANGURU","url":"e:\\DSA\\DSA04013-SAP_XEP_KANGURU.cpp","tests":[{"id":1746004918324,"input":"2\n8\n2 5 7 6 9 8 4 2\n8\n9 1 6 2 6 5 8 3","output":"5\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA04013-SAP_XEP_KANGURU.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: DSA07029-GIAI_MA_XAU_KY_TU","url":"e:\\DSA\\DSA07029-GIAI_MA_XAU_KY_TU.cpp","tests":[{"id":1747796137771,"input":"3\n1[b]\n3[b2[ca]]\n3[a3[b]1[ab]]","output":"b\nbcacabcacabcaca\nabbbababbbababbbab"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA07029-GIAI_MA_XAU_KY_TU.cpp","group":"local","local":true}

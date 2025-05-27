@@ -1,0 +1,1 @@
+{"name":"Local: DSA03019-PHAN_SO_DON_VI","url":"e:\\DSA\\DSA03019-PHAN_SO_DON_VI.cpp","tests":[{"id":1745855937396,"input":"2\n2 3\n1 3","output":"1/2 + 1/6 \n1/3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA03019-PHAN_SO_DON_VI.cpp","group":"local","local":true}

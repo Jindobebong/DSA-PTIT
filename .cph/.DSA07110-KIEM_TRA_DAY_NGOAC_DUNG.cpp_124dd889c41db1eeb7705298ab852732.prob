@@ -1,0 +1,1 @@
+{"name":"Local: DSA07110-KIEM_TRA_DAY_NGOAC_DUNG","url":"e:\\DSA\\DSA07110-KIEM_TRA_DAY_NGOAC_DUNG.cpp","tests":[{"id":1745865853127,"input":"2\n[()]{}{[()()]()}\n[(])","output":"YES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA07110-KIEM_TRA_DAY_NGOAC_DUNG.cpp","group":"local","local":true}

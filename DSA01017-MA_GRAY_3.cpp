@@ -14,13 +14,12 @@ int main()
         cin >> s; 
         string ans = "";
         ans += s[0];
-        for(int i = 1; i < s.size(); ++i)
-            ans += ((s[i] - '0') ^ (s[i - 1] - '0') + '0'); 
+        for(int i = 1; i < s.size(); ++i){
+            if(s[i] != s[i - 1]) ans += '1';
+            else ans += '0';
+        }
         cout << ans << endl; 
     }
     return 0;
 }
 
-/*
-gray[i] = binary[i] ^ binary[i - 1]
-*/

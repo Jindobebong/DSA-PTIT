@@ -1,0 +1,1 @@
+{"name":"Local: DSA02028-CHIA_DEU","url":"e:\\DSA\\DSA02028-CHIA_DEU.cpp","tests":[{"id":1746156494946,"input":"3 2\n-2 0 -2","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA02028-CHIA_DEU.cpp","group":"local","local":true}

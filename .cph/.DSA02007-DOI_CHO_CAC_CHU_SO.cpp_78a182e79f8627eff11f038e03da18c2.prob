@@ -1,0 +1,1 @@
+{"name":"Local: DSA02007-DOI_CHO_CAC_CHU_SO","url":"e:\\DSA\\DSA02007-DOI_CHO_CAC_CHU_SO.cpp","tests":[{"id":1745759686220,"input":"3\n4\n1234567\n3\n3435335\n2\n1034","output":"7654321\n5543333\n4301"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA02007-DOI_CHO_CAC_CHU_SO.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: DSA04023-KHOANG_CACH_NHO_HON_K","url":"e:\\DSA\\DSA04023-KHOANG_CACH_NHO_HON_K.cpp","tests":[{"id":1746005949216,"input":"2\n4 3\n1 10 4 2\n3 5\n2 3 4","output":"2\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA04023-KHOANG_CACH_NHO_HON_K.cpp","group":"local","local":true}

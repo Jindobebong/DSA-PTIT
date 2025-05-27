@@ -1,4 +1,30 @@
-if __name__ == '__main__':
-    n = int(input())
-    for i in range(1, n + 1):
-        print(i, end="")
+import random
+import math
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Node class to store x, y coordinates and parent node
+class Node:
+    def __init__(self, x, y, parent=None):
+        self.x = x
+        self.y = y
+        self.parent = parent
+
+# Euclidean distance between two nodes
+def distance(n1, n2):
+    return math.hypot(n1.x - n2.x, n1.y - n2.y)
+
+# Steer function to move towards the random node
+def steer(from_node, to_node, extend_length=10.0):
+    dist = distance(from_node, to_node)
+    if dist <= extend_length:
+        return to_node
+    theta = math.atan2(to_node.y - from_node.y, to_node.x - from_node.x)
+    new_x = from_node.x + extend_length * math.cos(theta)
+    new_y = from_node.y + extend_length * math.sin(theta)
+    return Node(new_x, new_y, from_node)
+
+# Get the nearest node in the tree to the random node
+def get_nearest_node(tree, rand_node):
+    nearest_node = tree[0]
+    min_dist_

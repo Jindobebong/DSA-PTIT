@@ -1,27 +1,28 @@
 #include <bits/stdc++.h>
-#define maxn 1005
+#define ll long long
+#define maxn 1000005
+#define endl "\n"
 using namespace std;
 
-int t, n, m;
 int main()
 {
-    cin >> t;
+    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+    int t; cin >> t; 
     while(t--){
-        cin >> n >> m; 
-        vector<int>a[maxn];
-        for(int i = 1; i <= m; ++i){
-            int u, v; cin >> u >> v; 
-            a[u].push_back(v); 
-            a[v].push_back(u);
+        int V, E, u, v; cin >> V >> E;
+        vector<vector<int>>ke(V + 1);
+        for(int i = 0; i < E; ++i){
+            cin >> u >> v;
+            ke[u].push_back(v);
+            ke[v].push_back(u);
         }
-        for(int i = 1; i <= n; ++i){
+        for(int i = 1; i <= V; ++i){
             cout << i << ": ";
-            sort(a[i].begin(), a[i].end());
-            for(int v : a[i])
-                cout << v << " ";
-            cout << "\n";
+            sort(ke[i].begin(), ke[i].end());
+            for(auto x : ke[i])
+                cout << x << " ";
+            cout << endl;
         }
-        //cout << "\n"; 
     }
     return 0;
 }

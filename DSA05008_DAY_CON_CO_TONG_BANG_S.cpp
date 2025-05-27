@@ -5,24 +5,26 @@
 using namespace std;
 
 int t, n, s;
+vector<int>a;
 int main()
 {
     ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
     cin >> t; 
     while(t--){
-        cin >> n >> s; 
-        int a[n];
-        for(int i = 1; i <= n; ++i) cin >> a[i];
-        vector<bool>dp(s + 1, false);
-        dp[0] = true; 
-        for(int i = 1; i <= n; ++i){
-            for(int j = s - a[i]; j >= 0; --j){
-                if(dp[j]) dp[j + a[i]] = true;
+        cin >> n >> s;  
+        a.resize(n); 
+        for(int i = 0; i < n; ++i) cin >> a[i];
+        
+        int dp[s + 5] = {};
+        for(int i = 0; i < n; ++i){
+            dp[a[i]] = 1;
+            for(int j = s; j >= a[i]; --j){
+                if(dp[j - a[i]]) dp[j] = 1;
             }
         }
-        if(dp[s]) cout << "YES"; 
+        if(dp[s]) cout << "YES";
         else cout << "NO";
-        cout << endl; 
+        cout << endl;
     }
     return 0;
 }

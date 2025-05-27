@@ -1,50 +1,30 @@
 #include <bits/stdc++.h>
 #define ll long long
+#define maxn 100005
+#define endl "\n"
 using namespace std;
 
+int t, n, dp[maxn];
+void ktao(){
+    dp[1] = 0; 
+    for(int i = 2; i <= maxn; ++i){
+        dp[i] = dp[i - 1] + 1;
+        if(i % 2 == 0) dp[i] = min(dp[i], dp[i / 2] + 1);
+        if(i % 3 == 0) dp[i] = min(dp[i], dp[i / 3] + 1);
+    }
+}
 int main()
 {
-    int t, n;
-    cin >> t;
-    while (t--)
-    {
-        cin >> n;
-
-        int ans = 0;
-
-        while (n > 1)
-        {
-            if (n % 3 == 0)
-            {
-                while (n % 3 == 0)
-                {
-                    n /= 3;
-                }
-                ++ans;
-            }
-            else if (n % 2 == 0)
-            {
-                while (n % 2 == 0)
-                {
-                    n /= 2;
-                }
-                ++ans;
-            }
-            else
-            {
-                ++ans;
-                n -= 1;
-            }
-        }
-        cout << ans << "\n";
+    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+    cin >> t; 
+    ktao();
+    while(t--){
+        cin >> n; 
+        cout << dp[n] << endl;
     }
     return 0;
 }
-
 /*
-10 
-
-5 
-4
-2 1
+Đầu tiên mặc định giảm 1 bước.
+Sau đó nếu chia 2, chia 3 tốt hơn thì chọn min().
 */

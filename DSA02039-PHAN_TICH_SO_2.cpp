@@ -4,19 +4,25 @@
 #define endl "\n"
 using namespace std;
 
-int t, n;
+int t, n; 
 vector<vector<int>>ans;
-vector<int>a;
-void backtrack(int sum, int last){
-    if(sum == 0){
-        ans.push_back(a);
+int check(vector<int>v){
+    for(int i = 0; i < v.size() - 1; ++i){
+        if(v[i] < v[i + 1])
+            return 0;
+    }
+    return 1;
+}
+void backtrack(int idx, int sum, vector<int>res){
+    if(sum == n){
+        if(check(res)) ans.push_back(res);
         return;
     }
-    for(int i = last; i >= 1; --i){
-        if(i <= sum){
-            a.push_back(i); 
-            backtrack(sum - i, i);
-            a.pop_back();
+    for(int i = n; i >= idx; --i){
+        if(sum + i <= n){
+            res.push_back(i);
+            backtrack(idx, sum + i, res);
+            res.pop_back();
         }
     }
 }
@@ -26,21 +32,18 @@ int main()
     cin >> t; 
     while(t--){
         cin >> n; 
-        a.clear(); 
         ans.clear();
-
-        backtrack(n, n); 
-
+        backtrack(1, 0, {});
         cout << ans.size() << endl;
         for(auto x : ans){
             cout << "(";
             for(int i = 0; i < x.size(); ++i){
-                if(i > 0) cout << ' ';
-                cout << x[i];
+                cout << x[i]; 
+                if(i != x.size() - 1) cout << " ";
             }
             cout << ") ";
         }
-        cout << endl; 
+        cout << endl;
     }
     return 0;
 }

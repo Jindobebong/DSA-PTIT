@@ -1,33 +1,37 @@
 #include <bits/stdc++.h>
 #define ll long long
+#define maxn 1000005
+#define endl "\n"
+#define pii pair<int, int>
 using namespace std;
-#define p pair<int, int>
-bool cmp(p x, p y){
-    if(x.second != y.second)
-        return x.second < y.second;
-    return x.first < y.first;
-}
-int t, n;
 
+int t, n; 
+vector<pii>v;
+bool cmp(pii a, pii b){
+    if(a.second != b.second)
+        return a.second < b.second;
+    return a.first < b.first;
+}
 int main()
 {
+    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
     cin >> t; 
     while(t--){
         cin >> n; 
-        vector<p>v(n);
-        for(int i = 0; i < n; ++i)
+        v.resize(n);
+        for(int i = 0; i < n; ++i) 
             cin >> v[i].first >> v[i].second;
         sort(v.begin(), v.end(), cmp);
-        int cnt = 0, j = 0, i = 1; 
-        while(i < n){
-            if(v[j].second <= v[i].first){
+        int cnt = 1, i = 0, j = 1; 
+        while(i < n && j < n){
+            if(v[i].second <= v[j].first){
                 ++cnt; 
-                j = i; 
-                ++i;
+                i = j;
+                ++j;
             }
-            else ++i;
+            else ++j;
         }
-        cout << cnt + 1 << "\n";
+        cout << cnt << endl;
     }
     return 0;
 }

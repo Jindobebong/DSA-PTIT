@@ -4,28 +4,29 @@
 #define endl "\n"
 using namespace std;
 
-int t;
+int t; 
 string s1, s2;
+int dp[1005][1005];
+
 int main()
 {
     ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
     cin >> t; 
     while(t--){
         cin >> s1 >> s2; 
-        int m = s1.size(), n = s2.size();
-        vector<vector<int>>dp(m + 1, vector<int>(n + 1, 0));
+        memset(dp, 0, sizeof dp); 
 
-        //Tính toán vòng lặp
-        for(int i = 1; i <= m; ++i){
-            for(int j = 1; j <= n; ++j){
-                if(s1[i - 1] == s2[j - 1])
+        int res = 0;
+        for(int i = 1; i <= s1.size(); ++i){
+            for(int j = 1; j <= s2.size(); ++j){
+                if(s1[i - 1] == s2[j - 1]) 
                     dp[i][j] = dp[i - 1][j - 1] + 1;
-                else 
+                else    
                     dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+                res = max(res, dp[i][j]);
             }
         }
-
-        cout << dp[m][n] << endl;
+        cout << res << endl;
     }
     return 0;
 }

@@ -5,22 +5,25 @@
 using namespace std;
 
 int t, n; 
-vector<int>a;
-void backtrack(int sum, int last){
-    if(sum == 0){
-        cout << '(';
-        for(int i = 0; i < a.size(); ++i){
-            if(i > 0) cout << " ";
-            cout << a[i];
-        }
-        cout << ") ";
+vector<vector<int>>ans;
+int check(vector<int>v){
+    for(int i = 0; i < v.size() - 1; ++i){
+        if(v[i] < v[i + 1])
+            return 0;
+    }
+    return 1;
+}
+void backtrack(int idx, int sum, vector<int>res){
+    if(sum == n){
+        //sort(res.begin(), res.end(), greater<int>());
+        if(check(res)) ans.push_back(res);
         return;
     }
-    for(int i = last; i >= 1; --i){
-        if(i <= sum){
-            a.push_back(i); 
-            backtrack(sum - i, i);
-            a.pop_back();
+    for(int i = n; i >= idx; --i){
+        if(sum + i <= n){
+            res.push_back(i);
+            backtrack(idx, sum + i, res);
+            res.pop_back();
         }
     }
 }
@@ -30,9 +33,17 @@ int main()
     cin >> t; 
     while(t--){
         cin >> n; 
-        a.clear();
-        backtrack(n, n);
-        cout << endl; 
+        ans.clear();
+        backtrack(1, 0, {});
+        for(auto x : ans){
+            cout << "(";
+            for(int i = 0; i < x.size(); ++i){
+                cout << x[i]; 
+                if(i != x.size() - 1) cout << " ";
+            }
+            cout << ") ";
+        }
+        cout << endl;
     }
     return 0;
 }

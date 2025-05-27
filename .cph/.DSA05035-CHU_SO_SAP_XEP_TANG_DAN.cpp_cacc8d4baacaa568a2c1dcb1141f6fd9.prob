@@ -1,0 +1,1 @@
+{"name":"Local: DSA05035-CHU_SO_SAP_XEP_TANG_DAN","url":"e:\\DSA\\DSA05035-CHU_SO_SAP_XEP_TANG_DAN.cpp","tests":[{"id":1746523792548,"input":"3\n1\n2\n3","output":"10\n55\n220"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA05035-CHU_SO_SAP_XEP_TANG_DAN.cpp","group":"local","local":true}

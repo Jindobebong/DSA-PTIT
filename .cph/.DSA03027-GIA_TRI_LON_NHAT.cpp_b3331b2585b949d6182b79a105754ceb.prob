@@ -1,0 +1,1 @@
+{"name":"Local: DSA03027-GIA_TRI_LON_NHAT","url":"e:\\DSA\\DSA03027-GIA_TRI_LON_NHAT.cpp","tests":[{"id":1746379955721,"input":"5\n-3 5 -10 8 -2","output":"26"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA03027-GIA_TRI_LON_NHAT.cpp","group":"local","local":true}

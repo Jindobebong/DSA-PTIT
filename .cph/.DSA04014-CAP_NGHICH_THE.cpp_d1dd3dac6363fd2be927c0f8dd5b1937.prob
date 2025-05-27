@@ -1,0 +1,1 @@
+{"name":"Local: DSA04014-CAP_NGHICH_THE","url":"e:\\DSA\\DSA04014-CAP_NGHICH_THE.cpp","tests":[{"id":1746080729055,"input":"2\n5\n2 4 1 3 5\n5\n5 4 3 2 1","output":"3\n10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\DSA\\DSA04014-CAP_NGHICH_THE.cpp","group":"local","local":true}

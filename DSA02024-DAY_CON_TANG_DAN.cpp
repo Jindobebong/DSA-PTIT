@@ -1,46 +1,46 @@
 #include <bits/stdc++.h>
 #define ll long long
+#define maxn 1000005
+#define endl "\n"
 using namespace std;
 
-int t, n, a[40], b[40];
-vector<string>res;
-int check(vector<int>v){
-    for(int i = 1; i < v.size(); ++i){
-        if(v[i] <= v[i - 1]) return 0;
-    }
-    return 1;
-}
-void ql(int i){
-    if(i == n + 1){
-        vector<int>v;
-        for(int j = 1; j <= n; ++j){
-            if(b[j]) v.push_back(a[j]);
-        }
-        if(v.size() > 1 && check(v)) {
-            stringstream ss;
-            for(auto x : v)
+int n, a[25];
+vector<string>ans;
+
+void backtrack(int i, vector<int>res){
+    if(res.size() >= 2 && res.back() < res[res.size() - 2])
+        return; // không cần kiểm tra sau này nữa
+    if(i == n){
+        if(res.size() >= 2){
+            stringstream ss; 
+            for(auto x : res){
                 ss << x << " ";
-            res.push_back(ss.str());
+            }
+            ans.push_back(ss.str());
         }
         return;
     }
-    for(int j = 0; j <= 1; ++j){
-        b[i] = j;
-        ql(i + 1);
-    }
+
+    // lấy
+    res.push_back(a[i]);
+    backtrack(i + 1, res);
+    res.pop_back();
+
+    // không lấy
+    backtrack(i + 1, res);
 }
+
 int main()
 {
+    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
     cin >> n; 
-    for(int i = 1; i <= n; ++i)
+    for(int i = 0; i < n; ++i)
         cin >> a[i];
-    ql(1);    
-    sort(res.begin(), res.end()); 
-    for(auto x : res)
-        cout << x << "\n";
+    ans.clear();
+    backtrack(0, {});
+    sort(ans.begin(), ans.end());
+    for(auto x : ans){
+        cout << x << endl;
+    }
     return 0;
 }
-/*
-4
-6 3 7 11
-*/
